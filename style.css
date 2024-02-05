@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#top_header {
+    border-bottom: 1px solid white;
+}
+#top_header #innerMenu{
+    width: 900px;
+    /* border: 1px solid blue; */
+    margin: auto;
+    padding: 15px;
+}
+#top_header ul, #main ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-family: sans-serif;
+}
+#top_header ul li, #main ul li:not(.link){
+    display: block;
+    padding: 15px;
+    /* border: 1px solid red; */
+    color: black;
+    font-weight: 800;
+}
+#main {
+    width: 1174px;
+    /* border: 1px solid blue; */
+    margin: auto;
+    padding: 15px;
+}
+#main ul {
+    align-items: center;
+}
+
+
+#main ul li:nth-child(7) a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 24px;
+    font-weight: 600;
+    border: 2px solid black;
+    color: black;
+    transition: all .3s ease;
+}
+#main ul li:last-child a{
+    background-color: orange;
+    display: block;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: all .3s ease;
+    
+}
+#main ul li:nth-child(7) a:hover, #main ul li:last-child a:hover {
+    background-color: black;
+    color: white;
+}
+
+.background {
+    position: relative;
+    background: url(banner1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-information {
+    display: flex;
+    justify-content: space-between;
+    min-height: 625px;
+    align-items: center ;
+}
+.banner-information .info-banner {
+    width: 60%;
+    gap: 15;
+    height: 625px;
+    background-color: rgba(7,39,101,.91);
+}
+
+.banner-information .form-banner{
+    width: 32%;
+    height: 455px;
+    background-color: rgba(7,39,101,.91);
+}
